@@ -28,6 +28,7 @@ export async function redirectToLogin(config: TInternalConfig) {
       redirect_uri: config.redirectUri,
       code_challenge: codeChallenge,
       code_challenge_method: 'S256',
+      ...config.extraAuthParams,
     })
     // Call any preLogin function in authConfig
     if (config?.preLogin) config.preLogin()

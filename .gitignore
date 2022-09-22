@@ -1,6 +1,5 @@
 node_modules
 .venv
-/src/dist/
 .idea
 log.txt
 /yarn.lock
